@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect, useState } from 'react'
+import "./app.css"
+import Form from './Form'
+import TodoList from './TodoList'
+const App = () => {
+    const [currentTime , setCurrentTime] = useState(new Date().toLocaleTimeString('en-US'))
+    const [input,setInput] = useState("")
+    const [todo,setTodo] = useState([])
 
-function App() {
+    setInterval(() => {
+        setCurrentTime(new Date().toLocaleTimeString('en-US'))  
+    }, 1000);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='container'>
+        <div className="current_time">{currentTime}</div>
+        
+         <main>
+            <TodoList/>
+            <Form/>
+         </main>
     </div>
-  );
+  )    
+
 }
 
-export default App;
+export default App

@@ -1,0 +1,20 @@
+form{
+    display: flex;
+    gap: 10px;
+}
+form .btn{
+    background:transparent;
+    border: 0;
+    font-size: 30px;
+    cursor: pointer;
+}
+form .btn:hover{
+    color: green;
+}
+form .input{
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid #000;
+    outline: none;
+    width: 100%;
+}
