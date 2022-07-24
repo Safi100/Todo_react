@@ -18,6 +18,9 @@ body{
     width: 100%;
     min-height: 100vh;
 }
+.current_time{
+    color:#fff;
+}
 .container{
     width: 90%;
     max-width: 343px;

@@ -1,10 +1,10 @@
 import React from 'react'
 import "./header.css"
-const Header = () => {
+const Header = ({TodoNumber}) => {
   return (
     <header>
     <h2>List</h2>
-    <span>3 task remaining</span>
+    <span>{TodoNumber.length} task remaining</span>
  </header>
   )
 }
