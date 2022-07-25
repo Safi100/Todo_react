@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/safi100.github.io/Todo_react/static/css/main.76cfe85c.css",
+    "main.js": "/safi100.github.io/Todo_react/static/js/main.71490886.js",
+    "static/media/Complete_task.svg": "/safi100.github.io/Todo_react/static/media/Complete_task.729f3ec92500e44df330.svg",
+    "index.html": "/safi100.github.io/Todo_react/index.html",
+    "main.76cfe85c.css.map": "/safi100.github.io/Todo_react/static/css/main.76cfe85c.css.map",
+    "main.71490886.js.map": "/safi100.github.io/Todo_react/static/js/main.71490886.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.76cfe85c.css",
+    "static/js/main.71490886.js"
+  ]
+}
