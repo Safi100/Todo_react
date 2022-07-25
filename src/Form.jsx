@@ -1,9 +1,10 @@
 import React from 'react'
 import "./form.css"
+import { v4 as uuid } from 'uuid';
 const Form = ({inputText, setInputText, todo, setTodo}) => {
   const HandleSubmitForm = (e) =>{
     e.preventDefault()
-    setTodo([...todo , {completed: false, text:inputText, id:Math.floor(Math.random() * 300) + 1 }])
+    setTodo([...todo , {completed: false, text:inputText, id:uuid()}])
     setInputText("")
   }
   const HandleInputChange = (e) =>{
@@ -13,7 +14,7 @@ const Form = ({inputText, setInputText, todo, setTodo}) => {
   return (
     <form onSubmit={HandleSubmitForm}>
       <button type='submit' className='btn'>+</button>
-      <input onChange={HandleInputChange} value={inputText} className='input' type="text" placeholder='Create new task'/>
+      <input onChange={HandleInputChange} value={inputText} className='input' type="text" placeholder='Create new task' required/>
     </form>
   )
 }

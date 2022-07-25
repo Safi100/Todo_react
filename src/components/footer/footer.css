@@ -1,0 +1,9 @@
+.container .delete_container{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    color: #fff;
+}
+.container .delete_container span{
+    cursor: pointer;
+}

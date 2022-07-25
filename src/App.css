@@ -21,9 +21,11 @@ body{
 .current_time{
     color:#fff;
 }
-.container{
+ .container{
     width: 90%;
     max-width: 343px;
+    display: flex;
+    flex-direction: column;
 }
 .container .current_time{
     font-size: 30px;

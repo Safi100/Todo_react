@@ -36,7 +36,29 @@ main{
     border-radius: 50%;
     cursor: pointer;
 }
+.to_do .text{
+    cursor: pointer;
+}
 .to_do .remove_btn{
     cursor: pointer;
     font-size: 18px;
+}
+.empty_text{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    font-weight: 700;
+    font-size: 20px;
+}
+/* Completed style */
+.completed_text{
+    color: #ABABAB;
+    text-decoration: line-through;
+}
+.completed_circle{
+    background: #68FFC9;
+    background-image: url(../src/Assets/completed_icon.png);
+    background-position: center;
+    background-repeat: no-repeat;
 }
